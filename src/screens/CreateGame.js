@@ -1,7 +1,6 @@
 import React from 'react'
 import ChallengeCard from '../components/challengeCard'
-
-
+import Logo from '../components/logo'
 function Bet(){
   const bets_list = [50, 100, 150, 200, 250, 300, 350, 400, 450, 500]
   return(
