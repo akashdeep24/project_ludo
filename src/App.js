@@ -1,6 +1,5 @@
 import './App.css';
 import BottomNav from './components/BottomNav';
-import Header from './components/Navbar';
 import "tailwindcss/tailwind.css";
 import LoginScreen from './screens/loginScreen';
 import CreateGame from './screens/CreateGame';

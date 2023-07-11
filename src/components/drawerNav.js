@@ -19,53 +19,50 @@ const Drawer = () => {
         </div>
 
       <div
-        className={`bg-gradient-to-b from-[#FFD700] fixed top-0 right-0 h-[48.8rem] w-64 z-50 ${
+        className={`bg-gradient-to-b from-slate-900 fixed top-0 right-0 h-[48.8rem] w-64 z-50 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } ease-in-out duration-500`}
+        onClick={() => setIsOpen(false)}
       >
-        <div className="flex items-center justify-around m-2 pb-3 pt-2 border-b border-b-black">
-          <span onClick={() => setIsOpen(false)} className="text-2xl italic font-bold text-[#013D7D] cursor-pointer">
+        <div className="flex items-center justify-around m-2 pb-3 pt-2 border-b border-b-[#013D7D]">
+          <span onClick={() => setIsOpen(false)} className="text-2xl italic font-bold text-[#FFD700] cursor-pointer">
             LETSLUDO
-          </span>
-
-          <span onClick={() => setIsOpen(false)}>
-            <IoMdClose className="w-10 h-10 bg-[#FFD700] rounded-3xl text-[#013D7D]" />
           </span>
         </div>
 
         <div className="m-5">
           <ul className="flex flex-col items-end gap-7  transition-all ease-in duration-500">
-            <li className="border-b border-b-black">
+            <li className="border-b border-b-[#013D7D]">
               <a
                 href="/"
-                className="text-xl text-[#013D7D] font-semibold transition-all ease-in-out duration-300"
+                className="text-xl text-[#FFD700] font-semibold transition-all ease-in-out duration-300"
               >
                 Games History
               </a>
             </li>
 
-            <li className="border-b border-b-black">
+            <li className="border-b border-b-[#013D7D]">
               <a
                 href="/"
-                className="text-xl text-[#013D7D] font-semibold transition-all ease-in-out duration-300"
+                className="text-xl text-[#FFD700] font-semibold transition-all ease-in-out duration-300"
               >
                 Transactions
               </a>
             </li>
 
-            <li className="border-b border-b-black">
+            <li className="border-b border-b-[#013D7D]">
               <a
                 href="/"
-                className="text-xl text-[#013D7D] font-semibold transition-all ease-in-out duration-300"
+                className="text-xl text-[#FFD700] font-semibold transition-all ease-in-out duration-300"
               >
                 Notifications
               </a>
             </li>
 
-            <li className="border-b border-b-black">
+            <li className="border-b border-b-[#013D7D]">
               <a
                 href="/"
-                className="text-xl text-[#013D7D] font-semibold transition-all ease-in-out duration-300"
+                className="text-xl text-[#FFD700] font-semibold transition-all ease-in-out duration-300"
               >
                Refer and Earn
               </a>

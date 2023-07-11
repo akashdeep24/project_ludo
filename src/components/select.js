@@ -68,7 +68,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Select() {
   const [selected, setSelected] = useState(people[3])
 
   return (
@@ -77,7 +77,7 @@ export default function Example() {
         <>
           <Listbox.Label className="block text-sm font-medium text-white text-2xl"></Listbox.Label>
           <div className="relative mt-2">
-            <Listbox.Button className="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm sm:leading-6 mt-16">
+            <Listbox.Button className="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-[#FFD700] sm:text-sm sm:leading-6 mt-16">
               <span className="flex items-center">
                 <img src={selected.avatar} alt="" className="h-5 w-5 flex-shrink-0 rounded-full" />
                 <span className="ml-3 block truncate">{selected.name}</span>
@@ -100,7 +100,7 @@ export default function Example() {
                     key={person.id}
                     className={({ active }) =>
                       classNames(
-                        active ? 'bg-indigo-600 text-white' : 'text-gray-900',
+                        active ? 'bg-[#FFD700] text-white' : 'text-gray-900',
                         'relative cursor-default select-none py-2 pl-3 pr-9'
                       )
                     }
@@ -120,7 +120,7 @@ export default function Example() {
                         {selected ? (
                           <span
                             className={classNames(
-                              active ? 'text-white' : 'text-indigo-600',
+                              active ? 'text-white' : 'text-[#FFD700]',
                               'absolute inset-y-0 right-0 flex items-center pr-4'
                             )}
                           >
