@@ -100,7 +100,7 @@ export default function Select() {
                     key={person.id}
                     className={({ active }) =>
                       classNames(
-                        active ? 'bg-[#FFD700] text-white' : 'text-gray-900',
+                        active ? 'bg-gradient-to-r from-[#F9F295] from-10% via-[#E0AA3E] via-30% to-[#FAF398] via-75% via-[#B88A44] to-90% text-white' : 'text-gray-900',
                         'relative cursor-default select-none py-2 pl-3 pr-9'
                       )
                     }

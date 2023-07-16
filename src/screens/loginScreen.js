@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Logo from '../components/logo';
 const FormHeader = props => (
   <h2 id="loginHeaderTitle">{props.title}</h2>
 );
