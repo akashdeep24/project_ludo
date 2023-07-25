@@ -116,3 +116,41 @@ html{
 #login_button{
   padding-bottom: 1.5rem;
 }
+
+
+
+
+
+/* ============= moving image animation starts ========================================================= */
+.image_style{
+  filter: drop-shadow(10px 10px 10px black);
+}
+
+@keyframes verticalMove {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.image-container {
+  height: 100vh; /* Set the height to full viewport height */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-scroll {
+  flex-shrink: 0;
+  animation: verticalMove 60s linear infinite; /* You can adjust the duration here (10s = 10 seconds) */
+}
+
+.image-scroll img {
+  width: 100%; /* Adjust the width as per your image size */
+}
+
+
+  
+/* ============= moving image animation ends ========================================================= */

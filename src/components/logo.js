@@ -2,8 +2,8 @@ import * as React from "react";
 const Logo = (props) => (
     <div class="mx-auto my-auto flex items-center justify-center">
     <svg
-    width={'10rem'}
-    height={'11rem'}
+    width={props.width}
+    height={props.height}
     viewBox="0 0 387.3966765949833 393.74999999999994"
     className="css-1j8o68f"
     {...props}
