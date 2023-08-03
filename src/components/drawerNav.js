@@ -11,11 +11,11 @@ const Drawer = () => {
   };
   return (
     <>
-        <div class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group" onClick={openDrawer}>
-            <svg class="w-6 h-6 text-[#285DBA] dark:text-[#285DBA] group-hover:text-blue-600 dark:group-hover:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <path clip-rule="evenodd" fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"></path>
+        <div className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group" onClick={openDrawer}>
+            <svg className="w-6 h-6 text-[#285DBA] dark:text-[#285DBA] group-hover:text-blue-600 dark:group-hover:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path clipRule="evenodd" fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"></path>
             </svg>
-            <span class="text-sm text-[#285DBA] dark:text-[#285DBA] group-hover:text-blue-600 dark:group-hover:text-blue-500">Menu</span>
+            <span className="text-sm text-[#285DBA] dark:text-[#285DBA] group-hover:text-blue-600 dark:group-hover:text-blue-500">Menu</span>
         </div>
 
       <div
@@ -28,7 +28,6 @@ const Drawer = () => {
           <span onClick={() => setIsOpen(false)} className="text-2xl italic font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#F9F295] from-10% via-[#E0AA3E] via-30% to-[#FAF398] via-75% via-[#B88A44] to-90% cursor-pointer">
             {appName} 
           </span>
-          {/* class="font-extrabold text-transparent text-8xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600" */}
 
         </div>
 

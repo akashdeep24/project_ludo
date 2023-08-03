@@ -1,6 +1,6 @@
 import * as React from "react";
 const Logo = (props) => (
-    <div class="flex items-center justify-center">
+    <div className="flex items-center justify-center">
     <svg
     width={props.width}
     height={props.height}

@@ -40,11 +40,12 @@ html{
   min-width: 300px;
   max-height: 700px;
   width: 30%;
-  height: 60%;
+  height: 70%;
   margin-left: 100px auto;
   margin-right: 100px auto;
+  padding-bottom: 30px;
   background-color: white;
-  border-radius: 25px;
+  border-radius: 10px;
   box-shadow: 0 3px 10px rgba(255, 255, 255, 0.45);
 }
 
@@ -97,21 +98,6 @@ html{
   color: rgba(0, 0, 0, 1);
 }
 
-.login_input button{
-  border-radius: 25px;
-  width: 80%;
-  height: 40px;
-  font-size: 1.3rem;
-  color: whitesmoke;
-  font-weight: 700;
-  background: rgba(167, 0, 195, 1);
-  background: linear-gradient(#013D7D,#0369D6,black);
-  border: 0px;
-}
-
-.login_input button:hover{
-  opacity: 0.9;
-}
 
 #login_button{
   padding-bottom: 1.5rem;
@@ -136,10 +122,12 @@ html{
 }
 
 .image-container {
+  z-index: 0;
   height: 100vh; /* Set the height to full viewport height */
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  position: absolute;
 }
 
 .image-scroll {
@@ -154,3 +142,6 @@ html{
 
   
 /* ============= moving image animation ends ========================================================= */
+*:focus {
+  outline: none;
+}

@@ -14,7 +14,7 @@ import OpenChallenges from '../components/OpenChallenges'
 function CreateGame() {
 
   return (
-    <div class="left-0 z-50 w-full h-full">
+    <div className="left-0 z-50 w-full h-full">
         <ChallengeCard/>
         <OpenChallenges/>
     </div>

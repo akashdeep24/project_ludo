@@ -6,7 +6,7 @@ function AllGames() {
   let games = gameList.map(function(game){
     return <ChallengeCard/>})
   return (
-    <div class="left-0 z-50 w-full h-16 bg-white border-t border-gray-200">
+    <div className="left-0 z-50 w-full h-16 bg-white border-t border-gray-200">
         {games}
     </div>
   )
