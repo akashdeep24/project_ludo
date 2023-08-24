@@ -13,8 +13,16 @@ const pan =  "FZAPS5268Z"
 
 function Profile() {
   const [showPopUp, setShowPopUp] = useState(false);
+  const [isEditingName, setIsEditingName] = useState(false);
+  const [editedName, setName] = useState(name)
   const showHidePopUp =()=>{
     setShowPopUp(!showPopUp)
+  }
+  const handleChange = (event) => {
+    setName(event.target.value);
+  }
+  const editName = ()=>{
+    setIsEditingName(!isEditingName)
   }
   return (
     <div>
@@ -24,7 +32,7 @@ function Profile() {
         <img src={man} className="w-[6rem]"/>
         <p className="text-lg text-white mt-2">{phone_number}</p>
         <p className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-[#F9F295] from-10% via-[#E0AA3E] via-30% to-[#FAF398] via-75% via-[#B88A44] to-90% cursor-pointer">
-          {name} 
+        {editedName?editedName:name} 
         </p>
       </div>
       {showPopUp?<PopUp showHidePopUp={showHidePopUp}/>:null}
@@ -32,18 +40,14 @@ function Profile() {
         <div style={{height:'auto',width:'95%', marginLeft:2,paddingLeft:10, borderWidth:1, borderColor:'#013D7D', borderRadius:5, marginTop:20}}>
           <p style={{marginTop:-8, paddingLeft:5, marginLeft:5,fontSize:10, background:'white', width:40, color:'#013D7D'}}>Name</p>
           <div style={{display:'flex', justifyContent:'space-between'}}>
-            <p style={{fontSize:20, fontWeight:400,}}>{name}</p>
-            <button style={{background:'#C2D3E2',fontSize:15, marginTop:-7,paddingTop:6,borderTopRightRadius:5, borderBottomRightRadius:5, width:70, display:'flex', justifyContent:'center'}}><p style={{color:'#013D7D'}}>Change</p>
+            {isEditingName?<input type="text" onChange={handleChange} required minlength="4" maxlength="25" style={{fontSize:20, fontWeight:400,}} />:<p style={{fontSize:20, fontWeight:400,}}>{editedName?editedName:name}</p>}
+            <button onClick={editName} style={{background:'#C2D3E2',fontSize:15, marginTop:-7,paddingTop:6,borderTopRightRadius:5, borderBottomRightRadius:5, width:70, display:'flex', justifyContent:'center'}}><p style={{color:'#013D7D'}}>Change</p>
             </button>
           </div>
         </div>
         <div style={{height:'auto',width:'95%', marginLeft:2,paddingLeft:10, borderWidth:1, borderColor:'#013D7D', borderRadius:5, marginTop:20}}>
           <p style={{marginTop:-8, paddingLeft:5, marginLeft:5,fontSize:10, background:'white', width:80, color:'#013D7D'}}>Phone Number</p>
-          <div style={{display:'flex', justifyContent:'space-between'}}>
             <p style={{fontSize:20, fontWeight:400,}}>{phone_number}</p>
-            <button style={{background:'#C2D3E2',fontSize:15, marginTop:-7,paddingTop:6,borderTopRightRadius:5, borderBottomRightRadius:5, width:70, display:'flex', justifyContent:'center'}}><p style={{color:'#013D7D'}}>Change</p>
-              </button>
-          </div>
         </div>
         <div style={{height:'auto',width:'95%', marginLeft:2,paddingLeft:10, borderWidth:1, borderColor:'#013D7D', borderRadius:5, marginTop:20}}>
           <p style={{marginTop:-8, paddingLeft:5, marginLeft:5,fontSize:10, background:'white', width:45, color:'#013D7D'}}>Adhaar</p>

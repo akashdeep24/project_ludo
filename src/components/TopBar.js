@@ -6,7 +6,7 @@ import rupee from '../assets/images/rupee.png'
 function TopBar(props) {
   const wallet_amount = "5000"
   return (
-    <div className="mx-auto sticky top-0 py-3 px-5 flex flex-col">
+    <div className="z-10 bg-gradient-to-b from-[#013D7D] to-[#1C458B] mx-auto sticky top-0 py-3 px-5 flex flex-col">
         <div className="mb-2 flex items-center justify-between">
           <Logo height={"3rem"} width={"3.2rem"}/>
             <div className="flex flex-col bg-white border-2 border-white rounded items-center justify-center w-24">

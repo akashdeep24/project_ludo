@@ -18,6 +18,7 @@ import Wallet from './screens/Wallet';
 import Profile from './screens/Profile';
 import AuthLoading from './screens/AuthLoading';
 import { AppProvider } from './Context/AppContext';
+import CreateGame from './screens/CreateGame';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
           <Route exact path="/" element={<AuthLoading/>} />
           <Route path="/login" element={<LoginScreen/>} />
           <Route exact path="/home" element={<Home/>} />
+          <Route path='/creategame' element={<CreateGame/>}/>
           <Route path="/wallet" element={<Wallet/>} />
           <Route path="/profile" element={<Profile/>} />
         </Routes>

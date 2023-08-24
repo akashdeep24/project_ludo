@@ -145,3 +145,12 @@ html{
 *:focus {
   outline: none;
 }
+.liveText{
+  animation: change 1s infinite;
+}
+
+@keyframes change {
+  50% {
+    color: red
+  }
+}
